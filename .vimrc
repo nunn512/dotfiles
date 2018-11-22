@@ -492,7 +492,7 @@ inoremap jj <ESC>
 " c
 autocmd FileType c,cpp setlocal autoindent cindent tabstop=8 shiftwidth=8 textwidth=80 noexpandtab
 autocmd FileType c,cpp colorscheme badwolf
-autocmd FileType c,cpp set tags=./tags;,tags,~/.vim/tags/libc7-dev_tags,~/.vim/tags/dpdk_tags
+autocmd FileType c,cpp set tags=./tags;,tags
 
 " go
 " vim-go
