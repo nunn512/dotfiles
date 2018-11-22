@@ -80,6 +80,7 @@ endif
 let g:deoplete#enable_at_startup = 1
 
 Plug 'zchee/deoplete-go', {'do':'make'}
+Plug 'flazz/vim-colorschemes'
 
 "*****************************************************************************
 "" Custom bundles
