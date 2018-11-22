@@ -1,5 +1,3 @@
-" vim-bootstrap b990cad
-
 "*****************************************************************************
 "" Vim-PLug core
 "*****************************************************************************
@@ -9,8 +7,7 @@ endif
 
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
-let g:vim_bootstrap_langs = "c,go,javascript,python"
-let g:vim_bootstrap_editor = "vim"				" nvim or vim
+let g:vim_editor = "vim"				" nvim or vim
 
 if !filereadable(vimplug_exists)
   if !executable("curl")
@@ -45,7 +42,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
-Plug 'avelino/vim-bootstrap-updater'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -305,7 +301,7 @@ let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
 let g:vimshell_prompt =  '$ '
 
 " terminal emulation
-if g:vim_bootstrap_editor == 'nvim'
+if g:vim_editor == 'nvim'
   nnoremap <silent> <leader>sh :terminal<CR>
 else
   nnoremap <silent> <leader>sh :VimShellCreate<CR>
