@@ -104,7 +104,10 @@ Plug 'jelera/vim-javascript-syntax'
 
 " python
 "" Python Bundle
-Plug 'davidhalter/jedi-vim', { 'commit': '1773837a11f311bd04755c70de363b5000c9cd15' }
+" Jedi breaks after this commit: 1773837
+" Fixed at some point
+" Plug 'davidhalter/jedi-vim', { 'commit': '1773837a11f311bd04755c70de363b5000c9cd15' }
+Plug 'davidhalter/jedi-vim'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
 " The initial position of this snippet was on line 45
