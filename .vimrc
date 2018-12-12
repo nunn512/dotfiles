@@ -75,6 +75,7 @@ if has('nvim')
     Plug 'Shougo/deoplete.nvim'
     Plug 'roxma/nvim-yarp'
     " Needs neovim package(pip3 install neovim)
+    " Migrate to pynvim(pip3 install pynvim) as soon as deoplete migrates
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
